@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a breadcrumb trail.
+ *
+ * Available variables:
+ * - breadcrumb: Breadcrumb trail items.
+ *
+ * @ingroup themeable
+ */
+#}
+{% if breadcrumb %}
+  <nav class="breadcrumb-trail" role="navigation" aria-labelledby="system-breadcrumb">
+    <ol class="breadcrumb-trail__items">
+    {% for item in breadcrumb %}
+      <li class="breadcrumb-trail__item">
+        {% if item.url %}
+          <a href="{{ item.url }}" class="breadcrumb-trail__link">{{ item.text }}</a>
+        {% else %}
+          <span class="breadcrumb-trail__link">{{ item.text }}</span>
+        {% endif %}
+        {% if not loop.last %}
+          <span class="breadcrumb-trail__divider">›</span>
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ol>
+  </nav>
+{% endif %}

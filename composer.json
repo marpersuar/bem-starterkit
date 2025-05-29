@@ -1,0 +1,11 @@
+{
+    "name": "marpersuar/bem_starterkit",
+    "description": "BEM Starterkit.",
+    "type": "drupal-custom-theme",
+    "authors": [
+        {
+            "name": "Marlon Yesid Pérez Suárez",
+            "email": "marpersuar@outlook.com"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+bem_starterkit.xs:
+  label: Extra Small
+  mediaQuery: "all and (min-width: 480px)"
+  weight: 0
+  multipliers:
+    - 1x
+bem_starterkit.sm:
+  label: Small
+  mediaQuery: "all and (min-width: 576px)"
+  weight: 1
+  multipliers:
+    - 1x
+bem_starterkit.md:
+  label: Medium
+  mediaQuery: "all and (min-width: 768px)"
+  weight: 2
+  multipliers:
+    - 1x
+bem_starterkit.lg:
+  label: Large
+  mediaQuery: "all and (min-width: 992px)"
+  weight: 3
+  multipliers:
+    - 1x
+bem_starterkit.xl:
+  label: Extra Large
+  mediaQuery: "all and (min-width: 1200px)"
+  weight: 4
+  multipliers:
+    - 1x

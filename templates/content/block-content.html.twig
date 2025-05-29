@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a block content.
+ *
+ * @see template_preprocess_block_content_template()
+ */
+#}
+{%
+  set classes = [
+    'block-content',
+    'block-content--' ~ bundle|clean_class,
+    view_mode ? 'block-content--' ~ view_mode|clean_class
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  {{ content }}
+</div>

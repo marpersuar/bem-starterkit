@@ -1,0 +1,21 @@
+name: BEM Starterkit
+type: theme
+description: BEM starterkit.
+core_version_requirement: ^10 || ^11
+base theme: false
+
+regions:
+  header_start: Header Start
+  header_end: Header End
+  navbar: Navbar
+  reports: Reports
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar: Sidebar
+  footer_top: Footer Top
+  footer_bottom: Footer Bottom
+
+libraries:
+  - bem_starterkit/global-styling
+
+version: 1.0.0
